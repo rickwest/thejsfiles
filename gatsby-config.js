@@ -60,7 +60,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#323330`,
         display: `minimal-ui`,
-        icon: `src/assets/the-py-files-square.png`,
+        icon: `src/assets/the-js-files-square.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -74,7 +74,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/assets/the-py-files-square.png",
+        logo: "./src/assets/the-js-files-square.png",
       }
     },
   ],
