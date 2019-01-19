@@ -2,7 +2,11 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/Bio'
+
+// Import typefaces
+import 'typeface-montserrat'
+import 'typeface-merriweather'
+
 import Layout from '../components/Layout'
 import { rhythm } from '../utils/typography'
 
@@ -20,7 +24,6 @@ class BlogIndex extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -35,10 +38,11 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <p dangerouslySetInnerHTML={{ __html: node.frontmatter.bio }} />
             </div>
           )
         })}
+        <hr />
       </Layout>
     )
   }
@@ -64,6 +68,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            bio
           }
         }
       }

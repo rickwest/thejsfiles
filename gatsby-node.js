@@ -18,6 +18,15 @@ exports.createPages = ({ graphql, actions }) => {
                   }
                   frontmatter {
                     title
+                    bio
+                    pic {
+                      childImageSharp {
+                        resize(width: 100) {
+                          src
+                        }
+                      }
+                    }
+                    twitter
                   }
                 }
               }

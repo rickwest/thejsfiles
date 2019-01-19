@@ -1,55 +1,53 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { rhythm, scale } from '../utils/typography'
+// Import typefaces
+import 'typeface-montserrat'
+import 'typeface-merriweather'
+
+import { rhythm } from '../utils/typography'
+
+import thePyFilesLogo from '../assets/the-py-files.png'
+import Footer from './Footer'
+import Newsletter from './Newsletter'
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
+        <div>
+          <img src={thePyFilesLogo} alt="The Py Files logo" />
+          <div
             style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
+              display: 'flex',
+              marginBottom: rhythm(2.5),
             }}
-            to={'/'}
           >
-            {title}
-          </Link>
-        </h1>
+            <p>
+              <strong>
+                A series of interviews with some awesome members of the Python community 🐍. Let's get to know the people behind the packages! 🙂
+              </strong>
+            </p>
+          </div>
+        </div>
       )
+
     } else {
       header = (
-        <h3
+        <Link
           style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1),
+            boxShadow: 'none',
+            textDecoration: 'none',
+            color: 'inherit',
           }}
+          to={'/'}
         >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            {title}
-          </Link>
-        </h3>
+          <img src={thePyFilesLogo} alt="The Py Files logo" style={{ height: '75px', marginBottom: 0 }} />
+        </Link>
       )
     }
     return (
@@ -63,6 +61,8 @@ class Layout extends React.Component {
       >
         {header}
         {children}
+        <Newsletter />
+        <Footer />
       </div>
     )
   }
