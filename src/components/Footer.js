@@ -21,17 +21,17 @@ class Footer extends React.Component {
           twitter
         </a> &bull;{' '}
         <a
-          href="https://github.com/rickwest/thepyfiles"
+          href="https://github.com/rickwest/thejsfiles"
           target="_blank"
           rel="noopener noreferrer"
         >
           github
         </a> &bull;{' '}
         <a
-          href="mailto:thepyfiles@gmail.com"
+          href="mailto:thejsfiles@gmail.com"
         > contact
         </a> &bull;{' '}
-        <a href="https://thepyfiles.com/rss.xml"
+        <a href="https://thejsfiles.com/rss.xml"
         > rss
         </a>
       </footer>

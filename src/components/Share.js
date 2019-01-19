@@ -24,7 +24,7 @@ class Share extends React.Component {
         cursor: 'pointer',
       },
       url: this.props.url,
-      title: `An interview with ${this.props.title} - The Py Files`,
+      title: `An interview with ${this.props.title} - The JS Files`,
     }
     let iconProps = {
       size: rhythm(1.5),

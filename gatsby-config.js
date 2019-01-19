@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'The Py Files',
+    title: 'The JS Files',
     author: 'Rick West',
-    description: 'A series of interviews with some of the awesome members of the Python community 🐍. Let\'s get to know the people behind the packages! 🙂',
-    siteUrl: 'https://thepyfiles.com',
+    description: 'A series of interviews with some of the awesome members of the JavaScript community🐍. Let\'s get to know the people behind the packages! 🙂',
+    siteUrl: 'https://thejsfiles.com',
   },
   plugins: [
     {
@@ -54,11 +54,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `The Py Files`,
-        short_name: `The Py Files`,
+        name: `The JS Files`,
+        short_name: `The JS Files`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#3775A9`,
+        theme_color: `#323330`,
         display: `minimal-ui`,
         icon: `src/assets/the-py-files-square.png`,
       },

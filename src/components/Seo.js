@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import logo from '../assets/the-py-files.png'
+import logo from '../assets/the-js-files.png'
 
 const Seo = ({ frontmatter, url }) => (
   <StaticQuery
@@ -57,7 +57,7 @@ const Seo = ({ frontmatter, url }) => (
               frontmatter.bio
             }`}
           />
-          <meta name="twitter:site" content="@thepyfiles" />
+          <meta name="twitter:site" content="@thejsfiles" />
           <meta name="twitter:creator" content="@rick_west8" />
           <meta name="twitter:image:src" content="preview.image" />
           {/* Open Graph general (Facebook, Pinterest & Google+) */}
@@ -69,7 +69,7 @@ const Seo = ({ frontmatter, url }) => (
           />
           <meta name="og:image" content={logoUrl} />
           <meta name="og:url" content={url} />
-          <meta name="og:site_name" content="The Py Files" />
+          <meta name="og:site_name" content="The JS Files" />
           <meta name="og:locale" content="en_GB" />
           <meta name="og:type" content="article" />
           {/* Open Graph - Article */}
@@ -80,7 +80,7 @@ const Seo = ({ frontmatter, url }) => (
             name="article:tag"
             content={`${
               frontmatter.title
-            }, Python, Programming, Software Development, Web Developer`}
+            }, JavaScript, Programming, Software Development, Web Developer`}
           />
         </Helmet>
       )

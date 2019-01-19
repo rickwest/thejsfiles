@@ -7,10 +7,10 @@ class Newsletter extends React.Component {
     return (
       <form
         style={{textAlign: 'center'}}
-        action="https://tinyletter.com/thepyfiles"
+        action="https://tinyletter.com/thejsfiles"
         method="post"
         target="popupwindow"
-        onSubmit="window.open('https://tinyletter.com/thepyfiles', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+        onSubmit="window.open('https://tinyletter.com/thejsfiles', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
       >
         <h4>Stay in touch!</h4>
         <p>
@@ -20,7 +20,7 @@ class Newsletter extends React.Component {
         <input type="hidden" value="1" name="embed"/>
         <input type="submit" value="Subscribe" style={{
           width: '100%',
-          backgroundColor: '#3775A9',
+          backgroundColor: '#323330',
           color: '#fff',
           cursor: 'pointer',
         }} />

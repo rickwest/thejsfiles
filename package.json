@@ -1,10 +1,10 @@
 {
   "name": "the-py-files",
-  "description": "The Py Files",
+  "description": "The JS Files",
   "version": "1.0.0",
   "author": "Rick West <rickwestdev@gmail.com>",
   "bugs": {
-    "url": "https://github.com/rickwest/thepyfiles/issues"
+    "url": "https://github.com/rickwest/thejsfiles/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.19",
@@ -43,12 +43,12 @@
     "gh-pages": "^1.2.0",
     "prettier": "^1.14.2"
   },
-  "homepage": "https://thepyfiles.com",
+  "homepage": "https://thejsfiles.com",
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rickwest/thepyfiles.git"
+    "url": "git+https://github.com/rickwest/thejsfiles.git"
   },
   "scripts": {
     "dev": "gatsby develop",

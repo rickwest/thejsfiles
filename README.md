@@ -1,6 +1,6 @@
-# The Py Files
+# The JS Files
 
-A series of interviews with some awesome members of the Python community 🐍. Let's get to know the people behind the packages! 🙂
+A series of interviews with some awesome members of the JavaScript community. Let's get to know the people behind the packages! 🙂
 
 This project is built with [Gatsby](https://www.gatsbyjs.org/) and is based on the [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog)
 
@@ -16,7 +16,7 @@ You also need the Gatsby CLI tool.
 ## Installing and running
 Clone the project
 
-```git clone https://github.com/rickwest/thepyfiles.git```
+```git clone https://github.com/rickwest/thejsfiles.git```
 
 Install the dependencies
 
@@ -40,7 +40,7 @@ If you encounter a problem or spot a mistake, or even if you would just like to 
 
 ## Support
 
-If you need some help or want to ask anything just drop me an [email](mailto:thepyfiles@gmail.com).
+If you need some help or want to ask anything just drop me an [email](mailto:thejsfiles@gmail.com).
 
 ## Copyright and License
 

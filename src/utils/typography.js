@@ -6,7 +6,7 @@ Wordpress2016.overrideThemeStyles = () => ({
     boxShadow: 'none',
   },
   a: {
-    color: '#3775A9',
+    color: '#6f706e',
   },
   hr: {
     marginBottom: typography.rhythm(1),

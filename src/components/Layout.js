@@ -7,7 +7,7 @@ import 'typeface-merriweather'
 
 import { rhythm } from '../utils/typography'
 
-import thePyFilesLogo from '../assets/the-py-files.png'
+import theJsFilesLogo from '../assets/the-js-files.png'
 import Footer from './Footer'
 import Newsletter from './Newsletter'
 
@@ -20,7 +20,7 @@ class Layout extends React.Component {
     if (location.pathname === rootPath) {
       header = (
         <div>
-          <img src={thePyFilesLogo} alt="The Py Files logo" />
+          <img src={theJsFilesLogo} alt="The JS Files logo" />
           <div
             style={{
               display: 'flex',
@@ -29,7 +29,7 @@ class Layout extends React.Component {
           >
             <p>
               <strong>
-                A series of interviews with some awesome members of the Python community 🐍. Let's get to know the people behind the packages! 🙂
+                A series of interviews with some awesome members of the JavaScript community. Let's get to know the people behind the packages! 🙂
               </strong>
             </p>
           </div>
@@ -46,7 +46,7 @@ class Layout extends React.Component {
           }}
           to={'/'}
         >
-          <img src={thePyFilesLogo} alt="The Py Files logo" style={{ height: '75px', marginBottom: 0 }} />
+          <img src={theJsFilesLogo} alt="The JS Files logo" style={{ height: '75px', marginBottom: 0 }} />
         </Link>
       )
     }
