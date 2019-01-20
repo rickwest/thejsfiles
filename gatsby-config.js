@@ -24,10 +24,9 @@ module.exports = {
             },
           },
           {
-            resolve: "gatsby-remark-embed-youtube",
+            resolve: "gatsby-remark-embed-video",
             options: {
               width: 800,
-              height: 400
             }
           },
           {
