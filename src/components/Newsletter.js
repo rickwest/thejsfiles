@@ -23,6 +23,7 @@ class Newsletter extends React.Component {
           backgroundColor: '#323330',
           color: '#fff',
           cursor: 'pointer',
+          borderColor: '#323330',
         }} />
       </form>
     )
